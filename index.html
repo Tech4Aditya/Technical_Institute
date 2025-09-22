@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITTIES - Innovation & Engineering Sciences</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <!-- AOS (Animate on Scroll) Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        /* Custom styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+        }
+        .bg-custom-dark { background-color: #0d1117; }
+        .bg-custom-medium { background-color: #161b22; }
+        .border-custom { border-color: #30363d; }
+        .text-custom-light { color: #c9d1d9; }
+        .text-custom-medium { color: #8b949e; }
+        .text-custom-link { color: #58a6ff; }
+        
+        /* Typewriter effect */
+        .typewriter-text {
+            display: inline-block;
+            overflow: hidden;
+            border-right: .15em solid #58a6ff;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .1em;
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #58a6ff; }
+        }
+
+        /* Gradient Text */
+        .gradient-text {
+            background: linear-gradient(90deg, #58a6ff, #a371f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: #58a6ff;
+        }
+    </style>
+</head>
+<body class="bg-custom-dark">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-40 bg-custom-dark/80 backdrop-blur-sm border-b border-custom">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="flex items-center space-x-3">
+                <img src="https://i.ibb.co/TB5x6sKJ/image-423dc6.jpg" alt="TITTIES Logo" class="w-10 h-10 rounded-md">
+                <span class="font-bold text-xl text-custom-light">T.I.T.T.I.E.S.</span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-6 text-sm">
+                <a href="#features" class="text-custom-medium hover:text-custom-light transition-colors">Features</a>
+                <a href="#team" class="text-custom-medium hover:text-custom-light transition-colors">Team</a>
+                <a href="#membership" class="text-custom-medium hover:text-custom-light transition-colors">Membership</a>
+                <a href="#contact" class="text-custom-medium hover:text-custom-light transition-colors">Contact</a>
+            </nav>
+            <button id="loginBtn" class="px-4 py-2 text-sm font-medium text-custom-light bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors">
+                Member Login
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container mx-auto px-4 md:px-8">
+
+        <!-- Hero Section -->
+        <section class="text-center py-24 md:py-32">
+            <h1 class="text-4xl md:text-6xl font-black text-custom-light mb-4" data-aos="fade-up">
+                Technical Institute of <br>
+                <span class="gradient-text">Tech Team</span>
+            </h1>
+            <div class="flex justify-center" data-aos="fade-up" data-aos-delay="200">
+                 <p class="typewriter-text text-lg md:text-xl text-custom-medium">Innovation & Engineering Sciences</p>
+            </div>
+            <p class="max-w-2xl mx-auto mt-6 text-custom-medium" data-aos="fade-up" data-aos-delay="400">
+                Engineering the Future, One Innovation at a Time. We are a collective of thinkers, builders, and innovators dedicated to pushing the boundaries of technology.
+            </p>
+            <div class="mt-8" data-aos="fade-up" data-aos-delay="600">
+                <a href="#membership" class="bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-blue-700 transition-all transform hover:scale-105">
+                    Become a Member
+                </a>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-20">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">What We Do</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature Card 1 -->
+                <div class="feature-card bg-custom-medium p-6 rounded-lg border border-custom transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <i data-feather="cpu" class="w-10 h-10 mb-4 text-blue-400"></i>
+                    <h3 class="font-bold text-xl mb-2 text-custom-light">Advanced Research</h3>
+                    <p class="text-custom-medium text-sm">Pioneering research in AI, quantum computing, and sustainable engineering to solve tomorrow's problems.</p>
+                </div>
+                <!-- Feature Card 2 -->
+                <div class="feature-card bg-custom-medium p-6 rounded-lg border border-custom transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <i data-feather="users" class="w-10 h-10 mb-4 text-blue-400"></i>
+                    <h3 class="font-bold text-xl mb-2 text-custom-light">Collaborative Projects</h3>
+                    <p class="text-custom-medium text-sm">Fostering teamwork through industry-level projects, turning theoretical knowledge into practical solutions.</p>
+                </div>
+                <!-- Feature Card 3 -->
+                <div class="feature-card bg-custom-medium p-6 rounded-lg border border-custom transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <i data-feather="award" class="w-10 h-10 mb-4 text-blue-400"></i>
+                    <h3 class="font-bold text-xl mb-2 text-custom-light">Skill Development</h3>
+                    <p class="text-custom-medium text-sm">Offering workshops and mentorship programs to equip members with the latest in-demand tech skills.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="py-20">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Our Innovators</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <!-- Team Member -->
+                <div class="text-center" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://api.dicebear.com/8.x/bottts/svg?seed=DipanshDas" alt="Dipansh das" class="w-24 h-24 rounded-full mx-auto mb-4 border-2 border-custom transform transition-transform hover:scale-110">
+                    <h4 class="font-semibold text-custom-light">Dipansh das</h4>
+                    <p class="text-sm text-custom-medium">Founder</p>
+                </div>
+                 <!-- Team Member -->
+                <div class="text-center" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://api.dicebear.com/8.x/bottts/svg?seed=KrishivChawla" alt="Krishiv Chawla" class="w-24 h-24 rounded-full mx-auto mb-4 border-2 border-custom transform transition-transform hover:scale-110">
+                    <h4 class="font-semibold text-custom-light">Krishiv Chawla</h4>
+                    <p class="text-sm text-custom-medium">EAM</p>
+                </div>
+                 <!-- Team Member -->
+                <div class="text-center" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="https://api.dicebear.com/8.x/bottts/svg?seed=AdityaPandey" alt="Aditya Pandey" class="w-24 h-24 rounded-full mx-auto mb-4 border-2 border-custom transform transition-transform hover:scale-110">
+                    <h4 class="font-semibold text-custom-light">Aditya Pandey</h4>
+                    <p class="text-sm text-custom-medium">Member</p>
+                </div>
+                 <!-- Team Member -->
+                <div class="text-center" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="https://api.dicebear.com/8.x/bottts/svg?seed=AyaanIqbal" alt="Ayaan Iqbal" class="w-24 h-24 rounded-full mx-auto mb-4 border-2 border-custom transform transition-transform hover:scale-110">
+                    <h4 class="font-semibold text-custom-light">Ayaan Iqbal</h4>
+                    <p class="text-sm text-custom-medium">Member</p>
+                </div>
+                 <!-- Team Member -->
+                <div class="text-center" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="https://api.dicebear.com/8.x/bottts/svg?seed=MananBhatia" alt="Manan Bhatia" class="w-24 h-24 rounded-full mx-auto mb-4 border-2 border-custom transform transition-transform hover:scale-110">
+                    <h4 class="font-semibold text-custom-light">Manan Bhatia</h4>
+                    <p class="text-sm text-custom-medium">Member</p>
+                </div>
+                 <!-- Team Member -->
+                <div class="text-center" data-aos="zoom-in" data-aos-delay="600">
+                    <img src="https://api.dicebear.com/8.x/bottts/svg?seed=SamyakJain" alt="Samyak Jain" class="w-24 h-24 rounded-full mx-auto mb-4 border-2 border-custom transform transition-transform hover:scale-110">
+                    <h4 class="font-semibold text-custom-light">Samyak Jain</h4>
+                    <p class="text-sm text-custom-medium">Member</p>
+                </div>
+                 <!-- Team Member -->
+                <div class="text-center" data-aos="zoom-in" data-aos-delay="700">
+                    <img src="https://api.dicebear.com/8.x/bottts/svg?seed=BhavyaChugh" alt="Bhavya Chugh" class="w-24 h-24 rounded-full mx-auto mb-4 border-2 border-custom transform transition-transform hover:scale-110">
+                    <h4 class="font-semibold text-custom-light">Bhavya Chugh</h4>
+                    <p class="text-sm text-custom-medium">Member</p>
+                </div>
+                 <!-- Team Member -->
+                <div class="text-center" data-aos="zoom-in" data-aos-delay="800">
+                    <img src="https://api.dicebear.com/8.x/bottts/svg?seed=VaibhavPandey" alt="Vaibhav Pandey" class="w-24 h-24 rounded-full mx-auto mb-4 border-2 border-custom transform transition-transform hover:scale-110">
+                    <h4 class="font-semibold text-custom-light">Vaibhav Pandey</h4>
+                    <p class="text-sm text-custom-medium">Member</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Membership Section -->
+        <section id="membership" class="py-20">
+             <div class="max-w-3xl mx-auto text-center" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-center mb-4">Join The Innovation Core</h2>
+                <p class="text-custom-medium mb-10">Get exclusive access to our resources, workshops, and network of innovators. Elevate your skills and be part of the future.</p>
+            </div>
+            <div class="bg-custom-medium border-2 border-blue-600 rounded-xl max-w-md mx-auto shadow-[0_0_20px_rgba(88,166,255,0.3)]" data-aos="zoom-in-up">
+                <div class="p-8">
+                    <h3 class="font-bold text-2xl text-center mb-2 text-custom-light">Core Membership</h3>
+                    <p class="text-center text-custom-medium mb-6">All-access plan</p>
+                    <p class="text-center font-black text-5xl my-4 text-custom-light">
+                        ₹3999<span class="text-lg font-medium text-custom-medium">/month</span>
+                    </p>
+                    <ul class="space-y-4 my-8 text-custom-medium">
+                        <li class="flex items-center"><i data-feather="check-circle" class="w-5 h-5 mr-3 text-green-400"></i>Access to all research papers</li>
+                        <li class="flex items-center"><i data-feather="check-circle" class="w-5 h-5 mr-3 text-green-400"></i>Weekly advanced workshops</li>
+                        <li class="flex items-center"><i data-feather="check-circle" class="w-5 h-5 mr-3 text-green-400"></i>Direct mentorship from founders</li>
+                        <li class="flex items-center"><i data-feather="check-circle" class="w-5 h-5 mr-3 text-green-400"></i>Priority project allocation</li>
+                    </ul>
+                    <button class="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition-all transform hover:scale-105">
+                        Join Now
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enquiry/Contact Section -->
+        <section id="contact" class="py-20">
+            <div class="max-w-3xl mx-auto text-center" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-center mb-4">Have Questions?</h2>
+                <p class="text-custom-medium mb-10">Whether it's about admissions, projects, or partnerships, we'd love to hear from you. Fill out the form below to get in touch with our team.</p>
+            </div>
+            <form class="max-w-xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                 <div class="mb-4">
+                    <label for="name" class="block text-sm font-medium text-custom-medium mb-2">Full Name</label>
+                    <input type="text" id="name" name="name" class="w-full bg-custom-dark border border-custom rounded-lg px-3 py-2 text-custom-light focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium text-custom-medium mb-2">Email Address</label>
+                    <input type="email" id="email" name="email" class="w-full bg-custom-dark border border-custom rounded-lg px-3 py-2 text-custom-light focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-sm font-medium text-custom-medium mb-2">Your Message</label>
+                    <textarea id="message" name="message" rows="4" class="w-full bg-custom-dark border border-custom rounded-lg px-3 py-2 text-custom-light focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition-colors">
+                    Send Enquiry
+                </button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-12 pt-8 border-t border-custom">
+        <div class="container mx-auto text-center text-custom-medium text-sm">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="hover:text-custom-light transition-colors"><i data-feather="github" class="w-5 h-5"></i></a>
+                <a href="#" class="hover:text-custom-light transition-colors"><i data-feather="twitter" class="w-5 h-5"></i></a>
+                <a href="#" class="hover:text-custom-light transition-colors"><i data-feather="linkedin" class="w-5 h-5"></i></a>
+            </div>
+            <p>&copy; 2024 TITTIES. All rights reserved.</p>
+            <p class="mt-2">Noida, Uttar Pradesh, India</p>
+        </div>
+    </footer>
+
+    <!-- Login Modal (Unchanged) -->
+    <div id="loginModal" class="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50 hidden">
+        <div class="bg-custom-medium p-8 rounded-lg shadow-xl w-full max-w-sm border border-custom transform transition-all duration-300 scale-95 opacity-0">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-2xl font-bold text-custom-light">Member Login</h2>
+                <button id="closeModalBtn" class="text-custom-medium hover:text-custom-light text-3xl leading-none">&times;</button>
+            </div>
+            <form>
+                <div class="mb-4">
+                    <label for="username" class="block text-sm font-medium text-custom-medium mb-2">Username</label>
+                    <input type="text" id="username" name="username" class="w-full bg-custom-dark border border-custom rounded-lg px-3 py-2 text-custom-light focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="mb-6">
+                    <label for="password" class="block text-sm font-medium text-custom-medium mb-2">Password</label>
+                    <input type="password" id="password" name="password" class="w-full bg-custom-dark border border-custom rounded-lg px-3 py-2 text-custom-light focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition-colors">
+                    Sign In
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- AOS (Animate on Scroll) Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Script to activate Feather Icons and handle modal-->
+    <script>
+      // Initialize AOS
+      AOS.init({
+        duration: 800,
+        once: true,
+        offset: 100,
+      });
+
+      feather.replace();
+
+      // Modal script (unchanged)
+      const loginModal = document.getElementById('loginModal');
+      const modalContent = loginModal.querySelector('div');
+      const loginBtn = document.getElementById('loginBtn');
+      const closeModalBtn = document.getElementById('closeModalBtn');
+
+      function openModal() {
+        loginModal.classList.remove('hidden');
+        setTimeout(() => {
+            modalContent.classList.remove('scale-95', 'opacity-0');
+            modalContent.classList.add('scale-100', 'opacity-100');
+        }, 10);
+      }
+
+      function closeModal() {
+        modalContent.classList.add('scale-95', 'opacity-0');
+        modalContent.classList.remove('scale-100', 'opacity-100');
+        setTimeout(() => {
+            loginModal.classList.add('hidden');
+        }, 300);
+      }
+
+      loginBtn.addEventListener('click', openModal);
+      closeModalBtn.addEventListener('click', closeModal);
+      loginModal.addEventListener('click', (event) => {
+          if (event.target === loginModal) closeModal();
+      });
+      document.addEventListener('keydown', (event) => {
+          if (event.key === 'Escape' && !loginModal.classList.contains('hidden')) closeModal();
+      });
+    </script>
+</body>
+</html>
